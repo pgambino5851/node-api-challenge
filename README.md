@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    Express is a framework that works with and on top of a Node.js server, similar to a framework like React or Angular for Javascript. Compared to the http module that Node typically uses for serving applications, Express is far more lightweight and unopinionated, allowing developers to more quickly create servers and backend applications. Lastly, Express lets us use helpful middleware for all of our projects that would otherwise be unavailable. 
+
 - [ ] Describe Middleware?
+
+    Middleware is a function, that can either be built in, third party, or custom, as in developed for a specific project and unshared otherwise. These functions let us intercept requests to our endpoints and let us do something specific with them before handling the endpoints like we usually do. Examples are logging our requests for later inspection, or validating certain parts of our requests so we know whether to continue handling them or throw an error.
 
 - [ ] Describe a Resource?
 
+    A resource is any piece of information returned by our endpoints. 
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    Status codes like 200 for success or 400 and 500 errors for various types of failure. 
+
 - [ ] How can we partition our application into sub-applications?
+
+    We can do so with Express Router. Router lets us not have to keep all of our endpoints in one file and instead, break them down by their specific common endpoints, e.g /api/projects vs /api/actions.
 
 ## Minimum Viable Product
 
